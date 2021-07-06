@@ -120,30 +120,22 @@ function creatTable (){
   }
 }
 function render () {
-   list.innerHTML = ""
-    let table = document.createElement('table');
-    // createTableHeader(table);
-    let tbody = document.createElement('tbody');
-    for (let i=0 ; i < arr.length; i++) {
-        let tr = document.createElement('tr');
-        let td = document.createElement('td');
-        td.innerText = "X";
-        td.className = i;
-        tr.appendChild(td);
-        let img = document.createElement('img')
-        img.src = arr[i].image;
-        td = document.createElement('td');
-        td.appendChild(img);
-        tr.appendChild(td);
-        td = document.createElement('td');
-        td.innerText = arr[i].name;
-        tr.appendChild(td);
-        td = document.createElement('td');
-        td.innerText = arr[i].release;
-        tr.appendChild(td);
-        tbody.appendChild(tr);
-    }
-    table.appendChild(tbody);
-    list.appendChild(table);
+   let tbody = document.querySelector('tbody')
+
+  let tr = document.createElement('tr');
+  tbody.appendChild(tr)
+
+ let td1 = document.createElement('td');
+ td1.textContent = this.name; 
+ tr.appendChild(td1)
+
+ let td2 = document.createElement('td');
+ td2.textContent = this.image; 
+ tr.appendChild(td2)
+
+ let td3 = document.createElement('td');
+ td3.textContent = this.release; 
+ tr.appendChild(td3)
+}
     Movies.prototype.setLocalStorge();
 }

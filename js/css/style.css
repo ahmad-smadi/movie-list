@@ -1,0 +1,45 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+header{
+  display: flex;
+  background-color: #39A2DB;
+  height: 70px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+header h1 {
+  font-size: 32px;
+  color: #eee;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 82vh;
+  width: 100%;
+}
+
+footer{
+  position: static;
+  height: 50px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #053742;
+  color: #eee;
+  margin-top: 5px;
+  padding-top: 15px;
+  
+}
+#movieForm {
+  left: 30px;
+  top: 30px;
+  border: 1px;
+  
+}
